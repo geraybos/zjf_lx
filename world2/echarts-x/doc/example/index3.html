@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>隆讯集团全球业务</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+   
+	<style>
+		.bb, .bb::before, .bb::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+         
+        .bb {
+          width:450px;
+          height: 280px;
+          margin: auto;
+        
+          color: green;
+          box-shadow: inset 0 0 0 1px red;
+        }
+        .bb::before, .bb::after {
+          content: '';
+          z-index: -1;
+          margin: -5%;
+          box-shadow: inset 0 0 0 2px;
+          animation: clipMe 8s linear infinite;
+        }
+        .bb::before {
+          animation-delay: -8s;
+        }
+        .bb:hover::after, .bb:hover::before {
+          background-color: rgba(255, 0, 0, 0.3);
+        }
+         
+        @keyframes clipMe {
+          0%, 100% {
+            clip: rect(0px, 800.0px, 2px, 0px);
+          }
+          25% {
+            clip: rect(0px, 2px, 280.0px, 0px);
+          }
+          50% {
+            clip: rect(448.0px, 4450.0px, 450.0px, 0px);
+          }
+          75% {
+            clip: rect(0px, 280.0px, 280.0px, 280.0px);
+          }
+        }   
+        
+	</style>
+
+</head>
+<body>
+<button class="bb"></div>    
+
+
+
+
+
+</body>
+
+</html>

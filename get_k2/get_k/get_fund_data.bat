@@ -1,0 +1,1 @@
+python %~dp0\get_fund_data.py

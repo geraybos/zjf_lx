@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>隆讯集团全球业务</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        .t_title{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 2.5em;
+            line-height: 80px;
+            color: #fff;
+        }
+        #chart_map{
+            cursor: pointer;
+        }
+        .t_show{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 2px;
+            background: #2C58A6;
+            padding: 2px 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+		
+    </style>
+	   
+		<style>
+		bb, .bb::before, .bb::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+         
+        .bb {
+          width:450px;
+          height: 280px;
+          margin_top: 0px;
+        
+          color: green;
+          box-shadow: inset 0 0 0 1px red;
+        }
+        .bb::before, .bb::after {
+          content: '';
+          z-index: -1;
+          margin: -5%;
+          box-shadow: inset 0 0 0 2px;
+          animation: clipMe 8s linear infinite;
+        }
+        .bb::before {
+          animation-delay: -8s;
+        }
+        .bb:hover::after, .bb:hover::before {
+          background-color: rgba(255, 0, 0, 0.3);
+        }
+         
+        @keyframes clipMe {
+          0%, 100% {
+            clip: rect(0px, 800.0px, 2px, 0px);
+          }
+          25% {
+            clip: rect(0px, 2px, 280.0px, 0px);
+          }
+          50% {
+            clip: rect(448.0px, 4450.0px, 450.0px, 0px);
+          }
+          75% {
+            clip: rect(0px, 280.0px, 280.0px, 280.0px);
+          }
+        }   
+	</style>
+</head>
+<body>
+
+<!--header-->
+<div class="header">
+    <div class="bg_header">
+        <div class="header_nav fl t_title">
+            隆讯集团全球业务
+        </div> 
+    </div>
+</div>
+
+<!--main-->
+<div class="data_content">
+    <!--<div class="data_time">-->
+        <!--温馨提示: 点击模块后跳转至详情页面。        -->
+    <!--</div>-->
+
+    <div class="data_main">
+        <div class="main_left fl">
+            <div class="left_1 t_btn6" style="cursor: pointer;">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="img/t_1.png" alt="">
+                  市场TOP10
+                </div>
+                <div id="chart_1" class="chart" style="width:100%;height: 280px;"></div>
+            </div>
+            <div class="left_2" style="cursor: pointer;">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="img/t_2.png" alt="">
+                    国内活跃地区
+                </div>
+                <div id="chart_2" class="chart t_btn9" style="width:100%;height: 280px;"></div>
+            </div>
+        </div>
+        <div class="main_center fl">
+            <div class="center_text">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                 <!--右下边框-->
+                 <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="img/t_3.png" alt="">
+                    隆讯世界
+                </div>
+                <!-- <div id="chart_map" style="width:100%;height:610px;"></div> -->
+                <iframe src="index.html" id="" style="width:100%;height:610px;"></iframe>
+            </div>
+        </div>
+        <div class="main_right fr">
+            <div class="right_1">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="img/t_4.png" alt="">
+                    上周强势
+                </div>
+                <div id="chart_3" class="echart t_btn7" style="width:100%;height: 280px;"></div>
+            </div>
+            <div class="right_2">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div> 
+                <div class="main_title">
+                    <img src="img/t_5.png" alt="">
+                    成长能力
+                </div>
+                <div id="chart_4" class="echart fl t_btn4" style="width:100%;height: 280px;cursor: pointer;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="data_bottom">
+        <div class="bottom_1 fl t_btn5" style="cursor: pointer;">
+            <!--左上边框-->
+            <div class="t_line_box">
+                <i class="t_l_line"></i> 
+                <i class="l_t_line"></i> 
+            </div> 
+            <!--右上边框-->
+            <div class="t_line_box">
+                <i class="t_r_line"></i> 
+                <i class="r_t_line"></i> 
+            </div> 
+            <!--左下边框-->
+            <div class="t_line_box">
+                <i class="l_b_line"></i> 
+                <i class="b_l_line"></i> 
+            </div> 
+                <!--右下边框-->
+                <div class="t_line_box">
+                <i class="r_b_line"></i> 
+                <i class="b_r_line"></i> 
+            </div>
+            <div class="main_title">
+                <img src="img/t_6.png" alt="">
+                活跃新增比top5
+            </div>
+              <div class="main_table t_btn8">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>国家/地区</th>
+                            <th>活跃</th>
+                            <th>活跃新增比</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+						  <tr>
+                            <td>马来西亚</td>
+                            <td>2840</td>
+                            <td>260</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                            <td>印度</td>
+                            <td>1700</td>
+                            <td>194.94</td>
+                            <td>2018年9月</td>
+                        </tr>
+						  <tr>
+                            <td>新加坡</td>
+                            <td>1170</td>
+                            <td>145.94</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                            <td>台湾</td>
+                            <td>16710</td>
+                            <td>36.94</td>
+                            <td>2018年9月</td>
+                        </tr>
+						 <tr>
+                            <td>越南</td>
+                            <td>22920</td>
+                            <td>22.47</td>
+                            <td>2018年9月</td>
+                        </tr>
+                     
+                    
+                        </tbody>
+                    </table>
+                </div>
+            
+        </div>
+        <div class="bottom_center fl">
+            <div class="bottom_2 fl">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div>
+				<div class=''>
+                <div class="main_title">
+                    <img src="img/t_7.png" alt="">
+                    安卓 top5
+                </div>
+                <div class="main_table t_btn8 ">
+                    <table>
+                        <thead>
+                        <tr>
+						    <th>国家/地区</th>
+                            <th>新增</th>
+                            <th>活跃</th>
+                            <th>总收入</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+						   <tr>
+                             <td>美国</td>
+                            <td>32030</td>
+                            <td>185396</td>
+                            <td>36000</td>
+                            <td>2018年9月</td>
+                        </tr>       
+                        <tr>
+                            <td>台湾</td>
+                            <td>36845</td>
+                            <td>115286</td>
+                            <td>55262</td>
+                            <td>2018年9月</td>
+                        </tr>
+						 <tr>
+                            <td>英国</td>
+                            <td>16927</td>
+                            <td>95286</td>
+                            <td>13705.61</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                            <td>意大利</td>
+                            <td>15546</td>
+                            <td>143562</td>
+                            <td>6425</td>
+                            <td>2018年9月</td>
+                        </tr>
+                       
+                        <tr>
+                             <td>德国</td>
+                            <td>12575</td>
+                            <td>125286</td>
+                            <td>9488</td>
+                            <td>2018年9月</td>
+                        </tr>
+                     
+                        </tbody>
+                    </table>
+                </div>
+				</div>
+		   </div>
+            <div class="bottom_3 fl">
+                <!--左上边框-->
+                <div class="t_line_box">
+                    <i class="t_l_line"></i> 
+                    <i class="l_t_line"></i> 
+                </div> 
+                <!--右上边框-->
+                <div class="t_line_box">
+                    <i class="t_r_line"></i> 
+                    <i class="r_t_line"></i> 
+                </div> 
+                <!--左下边框-->
+                <div class="t_line_box">
+                    <i class="l_b_line"></i> 
+                    <i class="b_l_line"></i> 
+                </div> 
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                    <i class="r_b_line"></i> 
+                    <i class="b_r_line"></i> 
+                </div>
+                <div class="main_title">
+                    <img src="img/t_7.png" alt="">
+                   IOS top5
+                </div>
+                <div class="main_table t_btn2">
+                    <table>
+                        <thead>
+                        <tr>
+						    <th>国家/地区</th>
+                            <th>新增</th>
+                            <th>活跃</th>
+                            <th>总收入</th>
+                            <th>日期</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+						   <tr>
+                             <td>马来西亚</td>
+                            <td>109113</td>
+                            <td>105396</td>
+                            <td>35574</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                            <td>台湾</td>
+                            <td>94925</td>
+                            <td>215286</td>
+                            <td>101687</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                            <td>意大利</td>
+                            <td>88724</td>
+                            <td>113562</td>
+                            <td>22526.28</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                            <td>西班牙</td>
+                            <td>52761</td>
+                            <td>105286</td>
+                            <td>13699.61</td>
+                            <td>2018年9月</td>
+                        </tr>
+                        <tr>
+                             <td>德国</td>
+                            <td>43848</td>
+                            <td>95286</td>
+                            <td>27259</td>
+                            <td>2018年9月</td>
+                        </tr>
+                     
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_4 fr">
+            <!--左上边框-->
+            <div class="t_line_box">
+                <i class="t_l_line"></i> 
+                <i class="l_t_line"></i> 
+            </div> 
+            <!--右上边框-->
+            <div class="t_line_box">
+                <i class="t_r_line"></i> 
+                <i class="r_t_line"></i> 
+            </div> 
+            <!--左下边框-->
+            <div class="t_line_box">
+                <i class="l_b_line"></i> 
+                <i class="b_l_line"></i> 
+            </div> 
+                <!--右下边框-->
+                <div class="t_line_box">
+                <i class="r_b_line"></i> 
+                <i class="b_r_line"></i> 
+            </div>
+            <div class="main_title">
+                <img src="img/t_7.png" alt="">
+               业务总收入
+            </div>
+            <div class="main_table t_btn3">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>总收入</th>
+                        <th>ANDRIOD 总收入</th>
+                        <th>IOS 总收入</th>
+                        <th>日期</th>
+                    </tr>
+                    </thead>
+					  <tr>
+                        <td>142264</td>
+                        <td>97165</td>
+                        <td>21589</td>
+                        <td>2018年4月</td>
+                    </tr>
+                    <tbody>
+					  <tr>
+                        <td>263678</td>
+                        <td>92292</td>
+                        <td>42917</td>
+                        <td>2018年5月</td>
+                    </tr>
+                    <tr>
+                        <td>314492</td>
+                        <td>289863</td>
+                        <td>91578</td>
+                        <td>2018年6月</td>
+                    </tr>
+                    <tr>
+                        <td>330008</td>
+                        <td>190859</td>
+                        <td>132444</td>
+                        <td>2018年7月</td>
+                    </tr>
+					  <tr>
+                        <td>560872</td>
+                        <td>150166</td>
+                        <td>117427</td>
+                        <td>2018年8月</td>
+                    </tr>
+                  
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/dataTool.js"></script>
+<script src="js/index.js"></script>
+<script src="js/china.js"></script>
+<script src="js/hebei.js"></script>
+</html>

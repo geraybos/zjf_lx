@@ -1,0 +1,224 @@
+time:2018-04-11 15:17:30.088000
+op:get stock_code
+time:2018-04-11 15:17:30.101000
+op:remove today
+time:2018-04-11 15:17:43.768000
+op:complate
+time:2018-04-12 15:17:21.648000
+op:get stock_code
+time:2018-04-12 15:17:21.661000
+op:remove today
+time:2018-04-12 15:17:35.523000
+op:complate
+time:2018-04-13 15:17:27.655000
+op:get stock_code
+time:2018-04-13 15:17:27.668000
+op:remove today
+time:2018-04-13 15:17:42.226000
+op:complate
+time:2018-04-16 15:17:32.637000
+op:get stock_code
+time:2018-04-16 15:17:32.650000
+op:remove today
+time:2018-04-16 15:17:50.626000
+op:complate
+time:2018-04-19 15:17:28.703000
+op:get stock_code
+time:2018-04-19 15:17:28.845000
+op:remove today
+time:2018-04-19 15:18:29.222000
+op:complate
+time:2018-04-20 15:17:21.933000
+op:get stock_code
+time:2018-04-20 15:17:21.946000
+op:remove today
+time:2018-04-20 15:17:34.368000
+op:complate
+time:2018-04-23 15:18:09.654000
+op:get stock_code
+time:2018-04-23 15:18:09.674000
+op:remove today
+time:2018-04-23 15:18:22.681000
+op:complate
+time:2018-04-24 15:15:23.471000
+op:get stock_code
+time:2018-04-24 15:15:23.489000
+op:remove today
+time:2018-04-24 15:16:01.583000
+op:complate
+time:2018-04-25 15:17:43.757000
+op:get stock_code
+time:2018-04-25 15:17:43.775000
+op:remove today
+time:2018-04-25 15:17:57.830000
+op:complate
+time:2018-04-26 15:17:45.185000
+op:get stock_code
+time:2018-04-26 15:17:45.204000
+op:remove today
+time:2018-04-26 15:18:09.859000
+op:complate
+time:2018-04-27 15:17:31.546000
+op:get stock_code
+time:2018-04-27 15:17:41.487000
+op:remove today
+time:2018-04-27 15:17:54.066000
+op:complate
+time:2018-04-30 15:15:49.838000
+op:get stock_code
+time:2018-04-30 15:15:49.857000
+op:remove today
+time:2018-04-30 15:16:01.473000
+op:complate
+time:2018-05-01 15:15:45.595000
+op:get stock_code
+time:2018-05-01 15:15:45.613000
+op:remove today
+time:2018-05-01 15:15:57.926000
+op:complate
+time:2018-05-02 15:18:08.031000
+op:get stock_code
+time:2018-05-02 15:18:08.049000
+op:remove today
+time:2018-05-02 15:18:28.657000
+op:complate
+time:2018-05-03 17:24:31.850000
+op:get stock_code
+time:2018-05-03 17:24:31.868000
+op:remove today
+time:2018-05-03 17:25:46.791000
+op:complate
+time:2018-05-04 15:17:26.462000
+op:get stock_code
+time:2018-05-04 15:17:26.481000
+op:remove today
+time:2018-05-04 15:17:46.335000
+op:complate
+time:2018-05-07 15:18:28.402000
+op:get stock_code
+time:2018-05-07 15:18:28.420000
+op:remove today
+time:2018-05-07 15:18:47.808000
+op:complate
+time:2018-05-08 15:17:35.866000
+op:get stock_code
+time:2018-05-08 15:17:35.885000
+op:remove today
+time:2018-05-08 15:17:48.951000
+op:complate
+time:2018-05-09 15:17:24.923000
+op:get stock_code
+time:2018-05-09 15:17:24.942000
+op:remove today
+time:2018-05-10 15:17:22.682000
+op:get stock_code
+time:2018-05-10 15:17:22.700000
+op:remove today
+time:2018-05-11 15:17:39.981000
+op:get stock_code
+time:2018-05-11 15:17:39.999000
+op:remove today
+time:2018-05-11 15:17:52.484000
+op:complate
+time:2018-05-14 15:17:41.009000
+op:get stock_code
+time:2018-05-14 15:17:41.030000
+op:remove today
+time:2018-05-14 15:17:54.023000
+op:complate
+time:2018-05-15 15:18:18.547000
+op:get stock_code
+time:2018-05-15 15:18:18.565000
+op:remove today
+time:2018-05-15 15:18:31.587000
+op:complate
+time:2018-05-16 15:17:38.110000
+op:get stock_code
+time:2018-05-16 15:17:38.128000
+op:remove today
+time:2018-05-16 15:17:53.432000
+op:complate
+time:2018-05-18 17:42:20.510000
+op:get stock_code
+time:2018-05-18 17:42:20.539000
+op:remove today
+time:2018-05-18 17:44:13.642000
+op:complate
+time:2018-05-21 15:18:10.290000
+op:get stock_code
+time:2018-05-21 15:18:10.320000
+op:remove today
+time:2018-05-21 15:18:40.855000
+op:complate
+time:2018-05-22 15:21:10.570000
+op:get stock_code
+time:2018-05-22 15:21:10.592000
+op:remove today
+time:2018-05-22 15:21:56.276000
+op:complate
+time:2018-05-23 15:22:22.519000
+op:get stock_code
+time:2018-05-23 15:22:22.546000
+op:remove today
+time:2018-05-23 15:23:19.836000
+op:complate
+time:2018-05-24 15:18:52.853000
+op:get stock_code
+time:2018-05-24 15:18:52.881000
+op:remove today
+time:2018-05-24 15:19:10.353000
+op:complate
+time:2018-05-28 15:20:00.342000
+op:get stock_code
+time:2018-05-28 15:20:00.382000
+op:remove today
+time:2018-05-28 15:20:44.172000
+op:complate
+time:2018-05-29 17:57:36.774000
+op:get stock_code
+time:2018-05-29 17:57:36.804000
+op:remove today
+time:2018-05-29 17:58:28.051000
+op:complate
+time:2018-05-30 15:27:40.596000
+op:get stock_code
+time:2018-05-30 15:27:40.645000
+op:remove today
+time:2018-05-30 15:28:16.429000
+op:complate
+time:2018-05-31 17:47:10.651000
+op:get stock_code
+time:2018-05-31 17:47:10.689000
+op:remove today
+time:2018-05-31 17:48:28.484000
+op:complate
+time:2018-06-01 15:17:19.907000
+op:get stock_code
+time:2018-06-01 15:17:19.928000
+op:remove today
+time:2018-06-01 15:17:33.417000
+op:complate
+time:2018-06-05 15:17:43.060000
+op:get stock_code
+time:2018-06-05 15:17:55.665000
+op:remove today
+time:2018-06-05 15:18:11.484000
+op:complate
+time:2018-06-06 15:23:09.405000
+op:get stock_code
+time:2018-06-06 15:23:09.423000
+op:remove today
+time:2018-06-06 15:23:51.674000
+op:complate
+time:2018-06-07 15:23:01.771000
+op:get stock_code
+time:2018-06-07 15:23:01.788000
+op:remove today
+time:2018-06-07 15:23:50.621000
+op:complate
+time:2018-06-08 15:21:58.491000
+op:get stock_code
+time:2018-06-08 15:21:58.513000
+op:remove today
+time:2018-06-08 15:22:45.148000
+op:complate

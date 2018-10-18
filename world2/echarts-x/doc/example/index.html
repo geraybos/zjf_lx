@@ -1,0 +1,363 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隆讯科技全球广告业务</title>
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/example.css">
+    <!-- <link rel="stylesheet" href="../css/codemirror.css"> -->
+    <!-- <link rel="stylesheet" href="../css/monokai.css"> -->
+    <!-- <link rel="stylesheet" href="../css/twilight.css"> -->
+    <body >
+        <!-- <header id="header" style="background:none;"> -->
+            <!-- <h1><a style="font-size:120%">Loncent</a></h1> -->
+            
+           
+		    <!-- <h1 id='title' style="color:blue;"></h1> -->
+	          
+		      <!-- <!-- <div style='padding:100px'><div> --> -->
+			  <!-- <div id='profit' style='margin-left:5%;margin-top:5%;font-size:120%'> -->
+			
+			  <!-- </div> -->
+			  
+			  <!-- <div style="margin-left:90%;font-size:60px;color:green;;margin-top:20%" ><div id='img' style="font-size:30px">+100</div></div> -->
+			  <!-- <span style="margin-left:70%;margin-top:1%;float:left;font-size:60px;color:white" ><h1>广告总收入:</h1></span> -->
+			  <!-- <h1 id ='num' style="font-size:60px;margin-top:2%;color:white">2341000</h1> -->
+			  
+		
+
+        <!-- </header> -->
+		
+        <main id="main" >
+            <div id="chart"></div>
+        </main>
+        <div id="editor" style="height:0px">;;;;
+            <textarea></textarea>
+            <div id="editor-toolbar">
+                <button id="editor-update">Update</button>
+                <button id="editor-refresh">Refresh All</button>
+                <button id="editor-close">Close</button>
+            </div>
+        </div>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/x-javascript" id="code-source">
+
+     function get_date() {
+	 
+
+    var base_data={"台湾":[120.67,25.05],
+				  
+	               
+					"香港、澳门":[114.10,22.13],
+					"加拿大":[-85.41,67.34],
+					"墨西哥":[-99,19.35],
+					"巴西":[-46.38,-23.33],
+					
+					
+					"澳大利亚":[121.50,-25.05],
+					
+					"爱尔兰":[-6.15,53.26],
+					"比利时":[4.21,50.51],
+				    "瑞士":[6,47],
+					"奥地利":[10,46.5],
+					"希腊":[23.43,37.58],
+					"匈牙利":[19.15,47.26],
+					
+					
+					"巴基斯坦":[74.22,31.34],
+					
+					"越南":[105.84009,21.03438],
+					"泰国":[98.960,18.793],
+					"马来西亚":[99.722,6.2955],
+					"新加坡":[103.38, 1.15],
+					"印度":[77,28],
+					"美国":[-100,40],
+					"意大利":[12.5,41.8],
+					"德国":[13.2, 52.31],
+
+					"法国":[-2,45],
+					"瑞典":[18,52.23],
+					"丹麦":[12.34,55.4],
+					"挪威":[27.45, 52.31],
+
+
+					"芬兰":[24.53,60.1],
+					
+					"日本":[139.69,35.70],
+					"韩国":[126.58,37.33],
+
+					"英国":[0,52],
+					"西班牙":[4,40.56],
+					"葡萄牙":[-9.5,38.42],
+					"荷兰":[4.52,52.21],
+					"土耳其":[28.58,41.02],
+					
+					"俄罗斯":[37.37,55.45],
+					"乌克兰":[30.29,50.28],
+					"罗马尼亚":[26.1,44.23],
+					"波兰":[19.08,55.9],
+					
+					"捷克":[14.22,50.05],
+					"保加利亚":[23.2,42.43],
+					"塞尔维亚":[20.28,44.49],
+					"缅甸":[104.91,11.55],
+					"柬埔寨":[103,10.38],
+					
+					"孟加拉国":[90.24,23.512],
+					"尼泊尔":[85.19,27.42],
+					"菲律宾":[120,15],
+					"哈萨克斯坦":[76.55,43.19],
+					"沙特阿拉伯":[46.43,24.41],
+					"以色列":[35.13,31.47],
+					"哥伦比亚":[-75.36,6.15],
+					"阿根廷":[-58.4,-35.6],
+					"智利":[-76.6,-3.2],
+					"秘鲁":[-76.55,-12.06],
+					"厄瓜多尔":[-78.3,-0.14],
+					
+					"摩洛哥":[-7.37,33.36],
+					"科威特":[47.5,29.21],
+					"多米尼加":[-69.6,18.3],
+					"尼日尼亚":[10.34,9.14],
+					"斯里兰卡":[80, 8],
+					"印度尼西亚":[128.1, -4.5 ],
+					"立陶宛":[23.88,55.16],
+					"阿尔巴尼亚":[20.2,39.52],
+					"波斯尼亚和黑塞哥维那":[-77.39627999999999,25.03428],
+					"白俄罗斯":[23.73,52.09],
+					"克罗地亚":[15.58,45.49],
+					"斯洛伐克":[15.58,48.09],
+					"塞尔维亚":[20.28,44.49],
+					"保加利亚":[23.2,42.43],
+					"捷克":[14.26,50.05],
+					"波兰":[18.38,54.22],
+					 
+					"南非":[27.5426,-26.55],
+					
+					
+					} 
+    var point_data=[]
+	point_data.push({
+                name: '隆讯-重庆',
+                geoCoord: [106.55, 29.57]
+            });
+	point_data.push({
+                name: '隆讯-广州',
+                geoCoord: [113.27, 23.13]
+            });
+	for(base in base_data){
+      point_data.push({'name':base,'geoCoord':base_data[base]})    
+	}
+
+
+    var lineData=[]
+    for (base in base_data){
+    lineData.push(
+	[
+	    {
+         // Source airport
+         geoCoord:  base_data[base]
+        }, 
+        {
+                                // Destination Airport
+         geoCoord:[106.55, 29.57]
+        }
+	]);
+	lineData.push(
+	[
+	    {
+         // Source airport
+         geoCoord:  base_data[base]
+        }, 
+        {
+                                // Destination Airport
+         geoCoord:[113.27, 23.13]
+        }
+	])
+	}
+		var option={
+	<!-- legend:[{selected:{'china':ture},{data:[]},{data:[]}], -->
+    title: {
+        text: '',
+        subtext: '',
+        x: 'center',
+        y: 'top',
+        textStyle: {
+            color: 'white',
+			fontSize:'150%',
+        },
+		
+    },
+    tooltip: {
+        formatter: '{b}'
+    },
+    <!-- legend: { -->
+                <!-- show: true, -->
+                <!-- data: ['no1.','no2.'], -->
+                
+               
+                <!-- x: 'right', -->
+                <!-- orient: 'vertical', -->
+                <!-- textStyle: { -->
+                    <!-- color: 'white' -->
+                <!-- } -->
+            <!-- }, -->
+    series: [{
+        name: 'placemarks',
+        type: 'map3d',
+        mapType: 'world',
+		roam:{focus:'Thailand'},
+		background: 'asset/starfield.jpg',
+		data: [{
+            name: 'China',
+            selected: false,
+			
+        }],
+		
+
+		
+        baseLayer: {
+            backgroundColor: '',
+            backgroundImage: 'asset/earth.jpg',
+            quality: 'high'
+        },
+		
+		mapLocation: {
+            x: 0,
+            y: 0,
+            width: '100%',
+            height: '100%'
+        },
+		
+        itemStyle: {
+            normal: {
+                label: {
+                    show: false
+                },
+                borderWidth: 1,
+                borderColor: 'yellow',
+                areaStyle: {
+                    color: 'rgba(0, 0, 0, 0)'
+                }
+            }
+        },
+        markPoint: {
+            symbol: 'image://./asset/phone.svg',
+            symbolSize: 2,
+            distance: 0,
+            // orientation: 'normal',
+            orientationAngle: 45,
+            itemStyle: {
+                normal: {
+                    label: {
+                        show: true,
+                        formatter: '{b}',
+                        position: 'right',
+                        textStyle: {
+                            fontSize: 70,//ziti
+                            color: 'red'
+                        }
+                    }
+                }
+            },
+            data: point_data
+        },
+		 
+		
+		
+		
+    },
+    {
+     type: 'map3d',
+     name: 'lines',
+     markLine: {
+     effect: {
+     show: true,
+	  scaleSize: 5
+     },
+	itemStyle: {
+		normal: {
+			// 线的颜色默认是取 legend 的颜色
+			// color: null
+			// 线宽，这里线宽是屏幕的像素大小
+			width: '20%',
+			// 线的透明度
+			opacity: 1,
+			<!-- color:'red', -->
+		}
+	},
+     data:lineData,  
+         
+     }
+    }
+	]
+	}
+        
+        myChart.setOption(option)
+		
+		myChart.hideLoading();
+    }
+   get_date()
+   
+
+   
+   <!-- var profit=[{'name': '台湾', 'value': 101687.54}, {'name': '美国', 'value': 65776.48}, {'name': '德国', 'value': 27259.57}, {'name': '意大利', 'value': 22526.28}, {'name': '英国', 'value': 22019.85}, {'name': '巴西', 'value': 21936.27}, {'name': '土耳其', 'value': 20688.38}, {'name': '法国', 'value': 17784.43}, {'name': '马来西亚', 'value': 15574.15}, {'name': '荷兰', 'value': 14905.97}, {'name': '巴基斯坦', 'value': 13820.04}, {'name': '印度', 'value': 13820.04}, {'name': '西班牙', 'value': 13699.61}, {'name': '墨西哥', 'value': 13290.96}, {'name': '比利时', 'value': 9272.15}, {'name': '瑞典', 'value': 8916.39}, {'name': '加拿大', 'value': 8399.81}, {'name': '丹麦', 'value': 8288.94}, {'name': '奥地利', 'value': 7160.1}, {'name': '匈牙利', 'value': 6429.37}, {'name': '中国香港', 'value': 6118.54}, {'name': '瑞士', 'value': 5629.56}, {'name': '芬兰', 'value': 5481.0}, {'name': '挪威', 'value': 5481.0}, {'name': '韩国', 'value': 5165.99}, {'name': '澳大利亚', 'value': 4521.59}, {'name': '南非', 'value': 3741.62}, {'name': '希腊', 'value': 3622.68}, {'name': '葡萄牙', 'value': 3580.02}, {'name': '日本', 'value': 3345.4}, {'name': '爱尔兰', 'value': 2544.18}, {'name': '智利', 'value': 2208.03}, {'name': '哥伦比亚', 'value': 2074.88}, {'name': '阿根廷', 'value': 2014.64}, {'name': '秘鲁', 'value': 1968.63}, {'name': '俄罗斯', 'value': 1959.59}, {'name': '越南', 'value': 1699.55}, {'name': '菲律宾', 'value': 792.81}, {'name': '波兰', 'value': 720.07}, {'name': '沙特阿拉伯', 'value': 688.44}, {'name': '伊拉克', 'value': 596.35}, {'name': '厄瓜多尔', 'value': 582.79}, {'name': '新加坡', 'value': 571.09}, {'name': '泰国', 'value': 533.02}, {'name': '以色列', 'value': 500.04}, {'name': '捷克', 'value': 470.33}, {'name': '印度尼西亚', 'value': 439.88}, {'name': '中国澳门', 'value': 315.27}, {'name': '保加利亚', 'value': 286.54}, {'name': '立陶宛', 'value': 271.46}, {'name': '罗马尼亚', 'value': 263.92}, {'name': '斯洛伐克', 'value': 186.44}, {'name': '玻利维亚', 'value': 176.28}, {'name': '黎巴嫩', 'value': 165.26}, {'name': '阿拉伯联合酋长国', 'value': 157.86}, {'name': '乌克兰', 'value': 146.85}, {'name': '乌拉圭', 'value': 128.39}, {'name': '危地马拉', 'value': 119.57}, {'name': '埃及', 'value': 117.73}, {'name': '波多黎各', 'value': 116.07}, {'name': '缅甸', 'value': 110.18}, {'name': '克罗地亚', 'value': 109.62}, {'name': '阿尔及尼亚', 'value': 96.01}, {'name': '约旦', 'value': 92.88}, {'name': '科威特', 'value': 91.01}, {'name': '委内瑞拉', 'value': 91.01}, {'name': '多米尼加共和国', 'value': 82.11}, {'name': '突尼斯', 'value': 81.24}, {'name': '塞尔维亚', 'value': 79.87}, {'name': '摩洛哥', 'value': 79.76}, {'name': '哈萨克斯坦', 'value': 76.67}, {'name': '阿尔巴尼亚', 'value': 65.7}, {'name': '柬埔寨', 'value': 58.21}, {'name': '尼泊尔', 'value': 49.06}, {'name': '孟加拉国', 'value': 47.02}, {'name': '波斯尼亚和黑塞哥维那', 'value': 45.88}, {'name': '阿曼', 'value': 43.49}, {'name': '巴勒斯坦', 'value': 43.49}, {'name': '白俄罗斯', 'value': 38.65}, {'name': '萨尔瓦多', 'value': 38.48}, {'name': '卡塔尔', 'value': 36.88}, {'name': '尼日尼亚', 'value': 35.28}, {'name': '利比亚', 'value': 33.81}, {'name': '巴拉圭', 'value': 24.96}, {'name': '斯里兰卡', 'value': 18.97}, {'name': '洪都拉斯', 'value': 13.02}, {'name': '也门', 'value': 10.81}, {'name': '巴拿马', 'value': 8.82}, {'name': '尼加拉瓜', 'value': 6.54}, {'name': '阿富汗', 'value': 4.19}, {'name': '巴林', 'value': 0.24}] -->
+   
+   <!-- var c=0; -->
+   <!-- length=profit.length; -->
+   <!-- color=['red','orange','yellow','	NavajoWhite','orange','yellow','NavajoWhite','orange'] -->
+   
+   <!-- function get_profit(){ -->
+    
+	<!-- if(c+1>length){ -->
+	 <!-- c=0; -->
+	<!-- } -->
+	<!-- num=8 -->
+	<!-- if(c<length && (c+7)>length){ -->
+	  <!-- num2=length-c -->
+	<!-- }else{ -->
+	  <!-- num2=num -->
+	<!-- } -->
+	<!-- content=''; -->
+	<!-- for(i=0;i<num;i++){ -->
+	    <!-- if(i<num2){  -->
+			<!-- content+="<li style='color:"+color[i]+"' > No."+(c+i+1)+"&nbsp;"+profit[c+i]['name']+"<span style='color:Gainsboro'>&nbsp;&nbsp;&nbsp;"+profit[c+i]['value']+"</span></li>"+ -->
+			<!-- "<span style='color:Gainsboro'>&nbsp;</span>"; -->
+		<!-- }else{ -->
+		   <!-- content+="<li>&nbsp;&nbsp;&nbsp;</li>"+ -->
+			<!-- "<span style='color:Gainsboro'>&nbsp;</span>"; -->
+		<!-- } -->
+	<!-- } -->
+
+		 <!-- <!-- "<li style='color:white'>  "+profit[c+7]['name']+"</li>" --> -->
+    <!-- c=c+8; -->
+	<!-- document.getElementById("profit").innerHTML=content -->
+	<!-- } -->
+    <!-- get_profit(); -->
+   <!-- setInterval(function () { -->
+	        <!-- get_profit(); -->
+	        <!-- value=document.getElementById("num").innerHTML;  -->
+			<!-- x=parseInt((Math.random()+0.01)*500) -->
+			
+			<!-- content="<img src='asset/数字"+x+".svg'></img>"; -->
+			
+			<!-- changeNum(parseInt(value)+x) -->
+			<!-- document.getElementById("img").innerHTML='+'+x; -->
+			 
+    
+         <!-- }, 3000);  -->
+</script>
+
+        <script src="../lib/esl.js"></script>
+        <script src="../lib/jquery.min.js"></script>
+        <script src="js/bootExample.js"></script>
+    </body>
+</head>
+</html>
